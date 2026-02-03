@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculador de Hipotenusa</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            width: 350px;
+            text-align: center;
+        }
+        h2 { color: #4b6cb7; margin-bottom: 20px; font-size: 22px; }
+        label { font-weight: bold; color: #555; display: block; text-align: left; }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            background: #4b6cb7;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover { background: #182848; }
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        a:hover { color: #4b6cb7; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Cálculo de la Hipotenusa</h2>
+        <form action="CalcularHipotenusa" method="post">
+            <label>Cateto A:</label>
+            <input type="number" step="any" name="catetoA" required>
+            
+            <label>Cateto B:</label>
+            <input type="number" step="any" name="catetoB" required>
+            
+            <button type="submit">Calcular c</button>
+        </form>
+        <a href="MenuPrincipal.html">Volver al Menú Principal</a>
+    </div>
+</body>
+</html>
