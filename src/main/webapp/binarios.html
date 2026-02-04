@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversión de Binarios - Ejercicio 1</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; padding-top: 50px; }
+        .container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 400px; text-align: center; }
+        select, input[type="text"] { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        input[type="submit"] { background-color: #007bff; color: white; border: none; padding: 12px; width: 100%; border-radius: 5px; cursor: pointer; font-size: 16px; margin-bottom: 15px; }
+        
+        /* ESTILO DEL BOTÓN VOLVER */
+        .btn-volver { 
+            display: block; 
+            text-decoration: none; 
+            background-color: #6c757d; 
+            color: white !important; /* Asegura que el texto sea blanco */
+            padding: 12px; 
+            border-radius: 5px; 
+            font-size: 16px; 
+            margin-top: 10px;
+        }
+        .btn-volver:hover { background-color: #5a6268; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Servlet Binario</h1>
+        <hr><br>
+        <form action="ServletBinarios" method="post">
+            <label><strong>Ingrese el número:</strong></label>
+            <input type="text" name="numero" placeholder="Ej: 1010 o 15" required>
+            
+            <label><strong>Seleccione la conversión es:</strong></label>
+            <select name="operacion">
+                <option value="binarioDecimal">Binario a Decimal</option>
+                <option value="decimalBinario">Decimal a Binario</option>
+            </select>
+            
+            <input type="submit" value="Convertir Ahora">
+        </form>
+<br>
+        <a href="MenuPrincipal.html" class="btn-volver">Volver al Menú Principal</a>
+    </div>
+</body>
+</html>
